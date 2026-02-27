@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Milanto Francia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f0f2f5;
+            padding: 20px;
+        }
+
+        .cv-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        /* HEADER DYNAMIQUE */
+        .header {
+            background: linear-gradient(135deg, #4834d4, #686de0);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .name-container h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .surname {
+            display: block;
+            font-weight: 300;
+            font-size: 26px;
+            color: #dff9fb;
+        }
+
+        .position {
+            display: inline-block;
+            background: rgba(255,255,255,0.15);
+            padding: 8px 25px;
+            border-radius: 30px;
+            font-size: 18px;
+            margin-top: 15px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* SIDEBAR */
+        .sidebar {
+            flex: 1;
+            min-width: 320px;
+            background: #fdfdfd;
+            padding: 40px;
+            border-right: 1px solid #eee;
+        }
+
+        /* CONTENT */
+        .content {
+            flex: 2;
+            min-width: 450px;
+            padding: 40px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #4834d4;
+            font-size: 22px;
+            border-bottom: 3px solid #686de0;
+            display: inline-block;
+            margin-bottom: 25px;
+            padding-right: 20px;
+        }
+
+        /* CONTACTS */
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .contact-icon {
+            width: 35px;
+            height: 35px;
+            background: #ebedff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 18px;
+        }
+
+        .contact-link {
+            color: #4834d4;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        /* SKILLS TAGS */
+        .skill-group {
+            margin-bottom: 20px;
+        }
+
+        .skill-group strong {
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #4834d4;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        /* PROJETS & FORMATION */
+        .item-card {
+            border-left: 4px solid #686de0;
+            padding: 5px 0 5px 20px;
+            margin-bottom: 30px;
+        }
+
+        .item-title {
+            font-weight: bold;
+            font-size: 19px;
+            color: #2d3436;
+        }
+
+        .item-subtitle {
+            color: #686de0;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .item-period {
+            color: #95a5a6;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .project-desc {
+            font-size: 15px;
+            color: #636e72;
+            margin-top: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content { flex-direction: column; }
+            .sidebar { border-right: none; border-bottom: 1px solid #eee; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <header class="header">
+        <div class="name-container">
+            <h1>ANDRIANAINA RAKOTOARISON</h1>
+            <span class="surname">Milanto Francia</span>
+        </div>
+        <p class="position">🚀 Développeur Web Fullstack</p>
+    </header>
+
+    <div class="main-content">
+        <aside class="sidebar">
+            <section class="section">
+                <h2>Contact</h2>
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <span>Fianarantsoa, Madagascar</span>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <a href="https://wa.me/261331616492" class="contact-link">033 16 164 92</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <a href="mailto:milantofrancia@gmail.com" class="contact-link">milantofrancia@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <span class="contact-icon">🌐</span>
+                    <a href="https://www.facebook.com/profile.php?id=61579168064326" class="contact-link" target="_blank">Facebook Profil</a>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Compétences</h2>
+                <div class="skill-group">
+                    <strong>Frontend Development</strong>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">JavaScript (ES6+)</span>
+                        <span class="tag">React.js</span>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <strong>Backend & Tools</strong>
+                    <div class="skill-tags">
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Git & GitHub</span>
+                        <span class="tag">SQL / NoSQL</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Langues</h2>
+                <p>🇫🇷 <strong>Français :</strong> Courant</p>
+                <p>🇬🇧 <strong>Anglais :</strong> Intermédiaire</p>
+                <p>🇩🇪 <strong>Allemand :</strong> Notions</p>
+            </section>
+        </aside>
+
+        <main class="content">
+            <section class="section">
+                <h2>À propos de moi</h2>
+                <p>Étudiant de 17 ans à l'<strong>EMIT</strong>, je suis passionné par l'écosystème web. Mon objectif est de transformer des idées complexes en applications simples, rapides et esthétiques.</p>
+            </section>
+
+            <section class="section">
+                <h2>Projets Réalisés</h2>
+                <div class="item-card">
+                    <div class="item-title">📁 Portfolio Personnel</div>
+                    <div class="item-subtitle">HTML, CSS, JavaScript</div>
+                    <p class="project-desc">Création de ce CV interactif et moderne pour présenter mon profil en ligne.</p>
+                </div>
+                <div class="item-card">
+                    <div class="item-title">📁 Application de Gestion (Demo)</div>
+                    <div class="item-subtitle">React.js & Node.js</div>
+                    <p class="project-desc">Développement d'une interface de gestion de tâches avec stockage de données.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Formations</h2>
+                <div class="item-card">
+                    <div class="item-title">EMIT</div>
+                    <div class="item-subtitle">Management et Innovation Technologique</div>
+                    <div class="item-period">En cours - Fianarantsoa</div>
+                    <p>Spécialisation en développement logiciel et gestion de projets technologiques.</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Expérience</h2>
+                <div class="item-card">
+                    <div class="item-title">Développeur Front-end</div>
+                    <div class="item-subtitle">TechCorp</div>
+                    <div class="item-period">Janvier 2025 – Présent</div>
+                    <p>Intégration de maquettes responsives et développement de composants réutilisables en React.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+
+</body>
+</html>
+
